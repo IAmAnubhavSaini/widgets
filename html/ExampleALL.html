@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link href="../css/reset.css" type="text/css" rel="stylesheet" />
+	<link href="../css/bs.css" type="text/css" rel="stylesheet" />
+	<link href="../css/anubhav.widgets.css" type="text/css" rel="stylesheet" />
+	<!-- 
+	
+	because now a days it really doesn't matter where you put your scripts -->
+	<script type="text/javascript" src="../js/jq.js"></script>
+	<script type="text/javascript" src="../js/jqui.js"></script>
+	<script type="text/javascript" src="../js/bs.js"></script>
+	<script type="text/javascript" src="../js/anubhav.widgets.js"></script>
+	<style type="text/css">
+		body{ height: 2000px; width: 1300px;}
+		.top-taker{			
+			padding: 5px 10px 5px 5px;
+		}
+		
+	</style>
+</head>
+<body>
+<header>
+	
+</header>
+<section>
+	<div class="TopTaker"></div>
+	<div class="CarouselLite"></div>
+	<div class="BreadCrumbs"></div>
+	<div class="PhotoLabeler"></div>
+</section>
+<footer></footer>
+<script type="text/javascript">
+$(function(){
+	$('.TopTaker').TopTaker({'theme':'dark','text':'take me to the top'});
+	$('.CarouselLite').TWBS_Carousel_lite();
+	$('.BreadCrumbs').breadcrumbs();
+	$('.PhotoLabeler').photolabeler();
+});
+</script>
+</body>
+</html>

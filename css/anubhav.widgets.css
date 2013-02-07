@@ -1,8 +1,7 @@
 ﻿.top-taker
 {
-    bottom:22%;
+    bottom:2%;
     right:1%;
-    padding:5px 10px;
     border-radius: 6px;
     border: thin solid #000;
     box-shadow: 1px 1px 1px 0 #999;
@@ -17,4 +16,16 @@
 .icon-arrow-up-dark
 {
     
+}
+.fixpos{
+ position: fixed;
+}
+.pointer{
+ cursor: pointer;
+}
+.hid{
+ display: none;
+}
+.centertext{
+ text-align: center;
 }

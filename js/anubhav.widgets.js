@@ -1,4 +1,4 @@
-﻿(function ($, undefined) {
+﻿(function ($, undefined) { //top taker
     $.widget("anubhav.TopTaker", {
         options: {
             theme: ''
@@ -56,7 +56,7 @@
     });
 })(jQuery);
 
-(function ($, undefined) {
+(function ($, undefined) { //twitter+bootstrap carousel lite
     $.widget("anubhav.TWBS_Carousel_lite", {
         options: {
             images: ''
@@ -94,7 +94,7 @@
     });
 })(jQuery);
 
-function URLInfo(URLScheme, retval) {
+function URLInfo(URLScheme, retval) { //helper function
     var _scheme = URLScheme || /^(?:([A-Za-z]+):)?(\/{0,3})([0-9.\-A-Za-z]+)(?::(\d+))?(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$/;
     var _retval = retval || 'hash';
     var _names = ['url', 'scheme', 'slash', 'host', 'port', 'path', 'query', 'hash'];
@@ -119,7 +119,7 @@ function URLInfo(URLScheme, retval) {
     return _ret;
 }
 
-(function ($, undefined) {
+(function ($, undefined) { //breadcrumbs
     $.widget("anubhav.breadcrumbs", {
         options: {
             URLScheme: '/^(?:[A-Za-z]+):)?(\/{0,3})([0-9.\-A-Za-z]+)(?::9\d+))?(?:\/)[^?#]*))?(?:\?([^#]*))?(?:#(.*))?$/'
@@ -197,7 +197,7 @@ function URLInfo(URLScheme, retval) {
     });//widget ends
 })(jQuery);//function ends
 
-(function($, undefined){
+(function($, undefined){ //Photo labeler
     $.widget("anubhav.photolabeler",{
     //usage example 
     //$('.photolabeler').photolabeler({ Pos:'absolute', LabelPosXName: 'right', LabelPosX: '100px' });
