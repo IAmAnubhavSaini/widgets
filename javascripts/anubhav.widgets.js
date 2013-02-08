@@ -2,12 +2,12 @@
     $.widget("anubhav.TopTaker", {
         options: {
             theme: ''
-            , imgEle: '<i class="icon"></i>'
             , text: 'TOP'
-            , hidClass: 'hid'
+            , hiddenClass: 'hid'
             , positionClass: 'fixpos'
             , cursorClass: 'pointer'
-            , scrollPosForTopTaker: '100'
+            , scrollPositionY: '100'
+			, imageElement: '<i class="icon"></i>'
             , iconClass: 'icon-arrow-up'
         }
         , _create: function () {
@@ -16,21 +16,25 @@
             var _opt = _ref.options;
             var _theme = _ref.options.theme;
             var _iconClass = _ref.options.iconClass;
-            var _OurEle = $('<div class="top-taker top-taker-' + _theme + '"></div>')
-                            .addClass(_ref.options.hidClass)
-                            .addClass(_ref.options.positionClass)
-                            .addClass(_ref.options.cursorClass);
+            
             var _text = _ref.options.text;
-            var _imgEle;
+            var _imageElement;
+			var _themeString = '';
             if (_theme != '') {
-                _imgEle = '<i class="icon ' +_iconClass +'-'+ _theme + '"></i>' + _text;
+				_themeString = 'top-taker-' + _theme;
+                _imageElement = '<i class="icon ' +_iconClass +'-'+ _theme + '"></i>' + _text;
             }
             else {
-                _imgEle = _ref.options.imgEle + _text;
+				_themeString = ''; //explicitely defined.
+                _imageElement = _ref.options.imageElement + _text;
             }
+			//using _themeString here
+			var _OurEle = $('<div class="top-taker '+_themeString '"></div>')
+                            .addClass(_ref.options.hiddenClass)
+                            .addClass(_ref.options.positionClass)
+                            .addClass(_ref.options.cursorClass);
 
-
-            $(_OurEle).append(_imgEle);
+            $(_OurEle).append(_imageElement);
 
 
             $(_container).append(_OurEle);
@@ -41,11 +45,11 @@
             });
 
             $(window).bind('scroll', function () {
-                if (window.scrollY > _ref.options.scrollPosForTopTaker) {
-                    $(_OurEle).removeClass(_ref.options.hidClass);
+                if (window.scrollY > _ref.options.scrollPositionY) {
+                    $(_OurEle).removeClass(_ref.options.hiddenClass);
                 }
-                if (window.scrollY < _ref.options.scrollPosForTopTaker) {
-                    $(_OurEle).addClass(_ref.options.hidClass);
+                if (window.scrollY < _ref.options.scrollPositionY) {
+                    $(_OurEle).addClass(_ref.options.hiddenClass);
                 }
             });
         }
