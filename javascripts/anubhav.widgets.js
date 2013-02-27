@@ -1,4 +1,5 @@
-﻿(function ($, undefined) { //top taker
+﻿/* AFL. read readme file at https://github.com/IAmAnubhavSaini/widgets/blob/master/README.md */
+(function ($, undefined) { //top taker
     $.widget("anubhav.TopTaker", {
         options: {
             theme: ''

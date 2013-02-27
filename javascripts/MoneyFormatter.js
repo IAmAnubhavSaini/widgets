@@ -1,3 +1,4 @@
+/* AFL. read readme file at https://github.com/IAmAnubhavSaini/widgets/blob/master/README.md */
 /* helper functions for MoneyFormatter*/
 function Set(numberString, separator, distance) {
     var isInitialSet = false;
