@@ -29,10 +29,7 @@
                 _imageElement = _ref.options.imageElement + _text;
             }
 			//using _themeString here
-			var _OurEle = $('<div class="top-taker '+_themeString '"></div>')
-                            .addClass(_ref.options.hiddenClass)
-                            .addClass(_ref.options.positionClass)
-                            .addClass(_ref.options.cursorClass);
+			var _OurEle = $('<div class="top-taker '+_themeString+ '"></div>').addClass(_ref.options.hiddenClass).addClass(_ref.options.positionClass).addClass(_ref.options.cursorClass);
 
             $(_OurEle).append(_imageElement);
 
