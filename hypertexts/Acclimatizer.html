@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Acclimatizer example</title>
+	<link href="../styles/bs.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="../javascripts/jq.js"></script>
+	<script type="text/javascript" src="../javascripts/jqui.js"></script>
+	<script type="text/javascript" src="../javascripts/acclimatizer.js"></script>
+	<style type="text/css">
+		.environment{
+			width: 1000px;
+			border: 1px solid black;
+		}
+		.inactive{
+			width: 19%;
+			height: 19%;
+			border: 1px thin solid red;
+			color: red;
+			padding: 4%;
+			float:left;
+		}
+		.active{
+			width: 40%;
+			height: 40%;
+			padding: 10%;
+			color: blue
+		}
+	</style>
+</head>
+<body>
+<header>
+	
+</header>
+<section class="environment">
+		<div class="inactive">element</div>
+		<div class="inactive">element</div>
+		<div class="inactive">element</div>
+		<div class="inactive">element</div>
+		<div class="inactive">element</div>
+		<br style="clear: both" />
+</section>
+<footer></footer>
+<script type="text/javascript">
+$(function(){
+	$('section').Acclimatize({'parentClass':'environment', 'inactiveStateClass':'inactive', 'activeStateClass':'active'});
+});
+</script>
+</body>
+</html>

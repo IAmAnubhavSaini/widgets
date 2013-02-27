@@ -36,9 +36,7 @@
 
             $(_OurEle).append(_imageElement);
 
-
             $(_container).append(_OurEle);
-
 
             $(_OurEle).bind('click', function () {
                 window.scrollTo(0, 0);
