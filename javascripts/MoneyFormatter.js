@@ -5,15 +5,19 @@ function Set(numberString, separator, distance) {
     var newReversedNumberString = '';
     var significantPart = ''; //on the left of the decimal in actual non reversed number
     var decimalPart = ''; //on the right of the decimal in actual non reversed number
-    var reversedNumberString = Reverse(numberString);
+	var isNegative = (numberString.indexOf('-') > -1) ? true : false;
+    var reversedNumberString = Reverse(numberString.replace('-',''));
 	//console.log(distance);
     //console.log('revesed number string : ' + reversedNumberString);
-    if (reversedNumberString.indexOf('.') > 0 ) {
+    if (reversedNumberString.indexOf('.') > -1 ) {
         significantPart =  reversedNumberString.substr(reversedNumberString.indexOf('.') + 1);
         decimalPart =  reversedNumberString.substr(0, reversedNumberString.indexOf('.') + 1);
+		//console.log(significantPart);
+		//console.log(decimalPart);
     }
 	else{
 		significantPart = reversedNumberString;
+		//console.log(significantPart);
 	}
     //console.log('received: ' + reversedNumberString);
     for (; i < significantPart.length; i++) {
@@ -38,6 +42,7 @@ function Set(numberString, separator, distance) {
     //console.log(newReversedNumberString);
     newReversedNumberString = Reverse(newReversedNumberString);
     newReversedNumberString = newReversedNumberString.concat(Reverse(decimalPart));
+	newReversedNumberString = (isNegative === true) ? '- '+newReversedNumberString : '+ '+newReversedNumberString;
     return newReversedNumberString;
 }
 function Reverse(numberString) {
@@ -50,6 +55,7 @@ function Reverse(numberString) {
 function Clean(numberString) {
 	var _i = 0;
 	var newCleanString = '';
+	var isNegative = (numberString.indexOf('-') > -1) ? true : false;
 	var C = '';
 	while(_i <numberString.length){
 		C = numberString.charAt(_i);
@@ -58,6 +64,7 @@ function Clean(numberString) {
 		} 
 		_i++;
 	}
+	newCleanString = (isNegative === true) ? '-'+ newCleanString : newCleanString;
 	return newCleanString;
 }
 function isDigit(Ch){
@@ -84,6 +91,7 @@ function isDigit(Ch){
             var _ModifiedValue = '';
             $(_ele).bind('blur', function() {
                 var _val = $(this).val();
+				_val = Clean(_val);
                 if (isFinite(_val) && _val !== '') {
                     //console.log(_val);
                     //alert(Set(_val, _sepSym, _d));//don't _d+1 'coz, _d+1 is string
