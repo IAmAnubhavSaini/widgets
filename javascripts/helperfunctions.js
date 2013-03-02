@@ -1,4 +1,4 @@
-
+/* AFL. read readme file at https://github.com/IAmAnubhavSaini/widgets/blob/master/README.md */
 function URLInfo(URLScheme, retval) { //helper function
     var _scheme = URLScheme || /^(?:([A-Za-z]+):)?(\/{0,3})([0-9.\-A-Za-z]+)(?::(\d+))?(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$/;
     var _retval = retval || 'hash';

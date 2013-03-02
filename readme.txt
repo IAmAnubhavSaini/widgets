@@ -44,3 +44,7 @@ reset.css
 
 Projects included END
 =====================
+
+License/Licence link
+--------------------
+https://github.com/IAmAnubhavSaini/widgets/blob/master/README.md

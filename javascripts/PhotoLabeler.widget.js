@@ -1,3 +1,4 @@
+/* AFL. read readme file at https://github.com/IAmAnubhavSaini/widgets/blob/master/README.md */
 function($, undefined){ //Photo labeler
     $.widget("anubhav.photolabeler",{
     //usage example 
