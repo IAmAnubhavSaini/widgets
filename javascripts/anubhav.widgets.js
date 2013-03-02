@@ -322,6 +322,7 @@ function isDigit(Ch){
 	if( Ch>='0' && Ch<='9' )return true;
 	else return false;
 }
+
 (function($, undefined) { //money formatter
     $.widget("anubhav.MoneyFormatter", {
         options: {
