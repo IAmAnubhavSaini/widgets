@@ -100,7 +100,7 @@ function isDigit(Ch){
 
 
 function ScriptLoader(ArraySRC){
-  if(ArraySRC === undefined) 
+  if(ArraySRC ===undefined) 
     ArraySRC = ["./scripts/jquery-1.9.1.min.js","./scripts/bootstrap.min.js","./scripts/traffoon-functions-0.0.1.js", "./scripts/anubhav.functions.js"];//,"./scripts/knockout-2.2.1.js"];
   for(var src in ArraySRC){
     var script = document.createElement('script');
