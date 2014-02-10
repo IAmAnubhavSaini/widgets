@@ -19,4 +19,5 @@ end.
 
 License/Licence
 ---------------
-public domain
+AFL : Anubhav's Free License is now reduced to public domain.
+Though I am tempted to GNU/GPL v2 it, but that doesn't work in web. Does it?
