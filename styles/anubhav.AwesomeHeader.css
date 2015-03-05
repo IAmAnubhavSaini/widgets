@@ -1,0 +1,17 @@
+#awesome-header, .unscrolled-header{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#awesome-header.scrolled-header{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.awesome-header-next-scrolled{
+    margin-top:0;
+}
+
+.awesome-header-next-unscrolled{
+    margin-top: 1em;
+}
