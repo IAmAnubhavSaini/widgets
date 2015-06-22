@@ -4,7 +4,7 @@
         options: {
             URLScheme: '/^(?:[A-Za-z]+):)?(\/{0,3})([0-9.\-A-Za-z]+)(?::9\d+))?(?:\/)[^?#]*))?(?:\?([^#]*))?(?:#(.*))?$/'
             ,   MinNumOfLinks: 1
-            ,   InitialLink : '<li><a class="site-brand" href="/">KRN Institute of Technology</a></li>'
+            ,   InitialLink : '<li><a class="site-brand" href="/">home</a></li>'
             ,   InitialLinkClass : 'site-brand'
             ,   EscapeSubDirs : 'home,details'
             ,   Divider: '<span class="divider">/</span>'
@@ -25,8 +25,6 @@
            //adding initial link and first slash based on the following rules:
            //1. if there is no sub-dir, slash is not added
            //2. if first sub-dir is one of the esc-sub-dirs, slash is not added
-           // where esc-sub-dirs is list of escapable sub directories 
-           //       example /home/ for /home/index , /home/about or /details/ if there is no /details/ present
            // why? : because first link cotains logo or brand name or site name already
            $(_container).append(_initialLink);
            //this is complex rule : DO spend time on understanding it before altering it.
@@ -48,7 +46,7 @@
                     var _crumbA  = $('<a>');
                     var _crumbSeparator = _divider;
                     _crumbA.attr('href', _location);
-                    _crumbA.append(val);
+                    _crumbA.append(val.toLowerCase());
                     _crumbLI.append(_crumbA);
                     if(key < _pieces.length -1){//#4
                         _crumbLI.append(_crumbSeparator);
