@@ -1,4 +1,3 @@
-/* AFL. read readme file at https://github.com/IAmAnubhavSaini/widgets/blob/master/README.md */
 (function($, undefined){//acclimatizer
 	$.widget("anubhav.Acclimatize", {
 		options: {

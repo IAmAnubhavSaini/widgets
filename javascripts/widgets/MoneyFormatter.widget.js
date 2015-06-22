@@ -1,5 +1,3 @@
-/* AFL. read readme file at https://github.com/IAmAnubhavSaini/widgets/blob/master/README.md */
-/* helper functions for MoneyFormatter*/
 function Set(numberString, separator, distance) {
     var isInitialSet = false;
     var i = 0;
@@ -113,4 +111,3 @@ function isDigit(Ch){
 
 
 })(jQuery);
-/*MoneyFormatter ends here */

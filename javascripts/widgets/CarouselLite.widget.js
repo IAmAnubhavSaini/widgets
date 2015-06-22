@@ -1,5 +1,3 @@
-/* AFL. read readme file at https://github.com/IAmAnubhavSaini/widgets/blob/master/README.md */
-//create an example before use.
 //Error should be that when adding css properties, values should have 'px' after them.
 (function ($, undefined) { //twitter+bootstrap carousel lite
     $.widget("anubhav.TWBS_Carousel_lite", {

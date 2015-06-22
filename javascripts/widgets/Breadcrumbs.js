@@ -1,4 +1,3 @@
-/* AFL. read readme file at https://github.com/IAmAnubhavSaini/widgets/blob/master/README.md */
 (function ($, undefined) { //breadcrumbs
     $.widget("anubhav.breadcrumbs", {
         options: {
