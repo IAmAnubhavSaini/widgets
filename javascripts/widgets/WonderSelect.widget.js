@@ -1,4 +1,5 @@
 (function ($, undefined) { //wonder select 
+    "use strict";
     $.widget("anubhav.WonderSelect", {
         options: {
             select: ''

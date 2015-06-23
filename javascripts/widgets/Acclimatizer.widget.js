@@ -1,4 +1,5 @@
 (function($, undefined){//acclimatizer
+	"use strict";
 	$.widget("anubhav.Acclimatize", {
 		options: {
 		//inactive state class is where things start from. It's a must.

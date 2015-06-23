@@ -1,4 +1,5 @@
-(function ($, undefined) { //top taker
+(function($, undefined) { //top taker
+    "use strict";
     $.widget("anubhav.TopTaker", {
         options: {
             theme: ''

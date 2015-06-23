@@ -1,4 +1,5 @@
-(function ($, undefined) { //breadcrumbs
+(function($, undefined) { //breadcrumbs
+    "use strict";
     function URLInfo(URLScheme, requiredPiece) { //helper function
       var scheme = URLScheme || /^(?:([A-Za-z]+):)?(\/{0,3})([0-9.\-A-Za-z]+)(?::(\d+))?(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$/;
       var partsOfURL = ['url', 'scheme', 'slash', 'host', 'port', 'path', 'query', 'hash'];

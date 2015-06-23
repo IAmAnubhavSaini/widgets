@@ -1,5 +1,6 @@
 //Error should be that when adding css properties, values should have 'px' after them.
-(function ($, undefined) { //twitter+bootstrap carousel lite
+(function($, undefined) { //twitter+bootstrap carousel lite
+    "use strict";
     $.widget("anubhav.TWBS_Carousel_lite", {
         options: {
             images: ''

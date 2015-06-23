@@ -1,4 +1,5 @@
 (function($, undefined){
+	"use strict";
 	$.widget("anubhav.SideScroll",{
 		options:{
 			dataBoxStyleClassesString: ''

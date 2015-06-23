@@ -1,4 +1,5 @@
-function($, undefined){ //Photo labeler
+(function($, undefined){ //Photo labeler
+    "use strict";
     $.widget("anubhav.photolabeler",{
     //usage example 
     //$('.photolabeler').photolabeler({ Pos:'absolute', LabelPosXName: 'right', LabelPosX: '100px' });
