@@ -6,49 +6,55 @@
 	<link href="../../styles/bs.css" type="text/css" rel="stylesheet" />
 	<script type="text/javascript" src="../../javascripts/jq.js"></script>
 	<script type="text/javascript" src="../../javascripts/jqui.js"></script>
-	<script type="text/javascript" src="../../javascripts/TopTaker.widget.js"></script>
+	<script type="text/javascript" src="../../javascripts/widgets/TopTaker.widget.js"></script>
 	<style type="text/css">
 		body{
 			height:2000px;
 		}
-		.TopTaker1 .top-taker{
+		.circular .top-taker{
+			height: 60px;
+			line-height: 60px;
+			width: 60px;
+			text-align: center;
 			background-color: orange;
-			bottom:90%;
-			font-size: 20px;
 			color: black;
-			width: auto;
-			padding-top: 30px;
+			position: fixed;
+			bottom:80%;
+			right: 1%;
 			border-radius: 50%;
 		}
-		.TopTaker2 .top-taker{
+		.totemShape .top-taker{
+			width: 70px;
+			line-height:70px;
+			height: 70px;
 			background-color: red;
+			position: fixed;
 			bottom:50%;
+			right: 1%;
 			border-radius: 50% 10%;
 			text-align: center;
-			line-height:50px;
 		}
-		.TopTaker3 .top-taker{
+		.rectangle .top-taker{
+			text-align: center;
+			line-height: 30px;
+			height: 30px;
+			width: 200px;
 			background-color: teal;
-			bottom:10%;
-		}
-		.TopTaker4 .top-taker{
-			left:10%;
-			width: 100px;
-			height: 1em;
-		}
-		.hid{
-			display: none;
-		}
-		.top-taker{
-			height: 50px;
-			min-width: 50px;
-			color: white;
 			position: fixed;
-			bottom: 1%;
+			bottom:10%;
 			right: 1%;
 		}
-		.top-taker-transparent{
-			background-color: transparent;
+		.candy .top-taker{
+			position: fixed;
+			left: 45%;
+			bottom: 1%;
+			width: 10%;
+			height: 1.6em;
+			line-height: 1.6em;
+			text-align: center;
+		}
+		.hide-top-taker{
+			display: none;
 		}
 		
 		.top-taker-dark{
@@ -59,27 +65,23 @@
 		}
 		.pointer{
 			cursor: pointer;
-		}
+		}	
 	</style>
 </head>
 <body>
-<header>
-	
-</header>
-<section>
-	<div class="TopTaker1"></div>
-	<div class="TopTaker2"></div>
-	<div class="TopTaker3"></div>
-	<div class="TopTaker4"></div>
-</section>
-<footer></footer>
-<script type="text/javascript">
-$(function(){
-	$('.TopTaker1').TopTaker({'text':'to the top'});
-	$('.TopTaker2').TopTaker({'scrollPosForTopTaker':'400'});
-	$('.TopTaker3').TopTaker({'text':'take me to the top', 'theme':'transparent'});
-	$('.TopTaker4').TopTaker({'theme':'dark'});
-});
-</script>
+	<section>
+		<div class="circular"></div>
+		<div class="totemShape"></div>
+		<div class="rectangle"></div>
+		<div class="candy"></div>
+	</section>
+	<script type="text/javascript">
+		$(function(){
+			$('.circular').TopTaker({'text':'top'});
+			$('.totemShape').TopTaker({'scrollPosForTopTaker':'400'});
+			$('.rectangle').TopTaker({'text':'take me to the top'});
+			$('.candy').TopTaker({'theme':'dark'});
+		});
+	</script>
 </body>
 </html>

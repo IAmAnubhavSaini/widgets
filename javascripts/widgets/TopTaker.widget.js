@@ -3,7 +3,7 @@
         options: {
             theme: ''
             , text: 'TOP'
-            , hiddenClass: 'hid'
+            , hiddenClass: 'hide-top-taker'
             , positionClass: 'fixpos'
             , cursorClass: 'pointer'
             , scrollPositionY: '100'
@@ -11,45 +11,42 @@
             , iconClass: 'icon-arrow-up'
         }
         , _create: function () {
-            var _ref = this;
-            var _container = _ref.element;
-            var _opt = _ref.options;
-            var _theme = _ref.options.theme;
-            var _iconClass = _ref.options.iconClass;
-            
-            var _text = _ref.options.text;
-            var _imageElement;
-			var _themeString = '';
-            if (_theme != '') {
-				_themeString = 'top-taker-' + _theme;
-                _imageElement = '<i class="icon ' +_iconClass +'-'+ _theme + '"></i>' + _text;
-            }
-            else {
-				_themeString = ''; //explicitely defined.
-                _imageElement = _ref.options.imageElement + _text;
-            }
-			//using _themeString here
-			var _OurEle = $('<div class="top-taker '+_themeString+ '"></div>').addClass(_ref.options.hiddenClass).addClass(_ref.options.positionClass).addClass(_ref.options.cursorClass);
+            var self = this,
+                container = self.element,
+                options = self.options,
+                theme = options.theme,
+                iconClass = options.iconClass,
+                text = options.text,
+                imageElement = '',
+                themeString = '';
 
-            $(_OurEle).append(_imageElement);
+            themeString = theme !== '' ? 'top-taker-' + theme : '';
+            imageElement = $(self.options.imageElement).addClass(iconClass).css('margin','0 2px 0 0');
+			//using themeString here
+			var OurEle = $('<div class="top-taker '+themeString+ '"></div>')
+                            .addClass(self.options.hiddenClass)
+                            .addClass(self.options.positionClass)
+                            .addClass(self.options.cursorClass);
 
-            $(_container).append(_OurEle);
+            $(OurEle).append(imageElement).append(text);
 
-            $(_OurEle).bind('click', function () {
+            $(container).append(OurEle);
+
+            $(OurEle).bind('click', function () {
                 window.scrollTo(0, 0);
             });
 
             $(window).bind('scroll', function () {
-                if (window.scrollY > _ref.options.scrollPositionY) {
-                    $(_OurEle).removeClass(_ref.options.hiddenClass);
+                if (window.scrollY > self.options.scrollPositionY) {
+                    $(OurEle).removeClass(self.options.hiddenClass);
                 }
-                if (window.scrollY < _ref.options.scrollPositionY) {
-                    $(_OurEle).addClass(_ref.options.hiddenClass);
+                if (window.scrollY < self.options.scrollPositionY) {
+                    $(OurEle).addClass(self.options.hiddenClass);
                 }
             });
         }
         , destroy: function () {
-            $(_OurEle).unbind('click');
+            $(OurEle).unbind('click');
             $(window).unbind('scroll');
         }
     });
