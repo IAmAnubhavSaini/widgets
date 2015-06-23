@@ -55,8 +55,7 @@
 		}
 		.hide-top-taker{
 			display: none;
-		}
-		
+		}	
 		.top-taker-dark{
 			background-color: black;
 			color: white;
@@ -69,6 +68,7 @@
 	</style>
 </head>
 <body>
+	<h1>Scroll me down slowly till end to see the action.</h1>
 	<section>
 		<div class="circular"></div>
 		<div class="totemShape"></div>
@@ -77,10 +77,10 @@
 	</section>
 	<script type="text/javascript">
 		$(function(){
-			$('.circular').TopTaker({'text':'top'});
-			$('.totemShape').TopTaker({'scrollPosForTopTaker':'400'});
+			$('.circular').TopTaker({'text':'top','scrollPositionY':'300'});
+			$('.totemShape').TopTaker({'scrollPositionY':'800'});
 			$('.rectangle').TopTaker({'text':'take me to the top'});
-			$('.candy').TopTaker({'theme':'dark'});
+			$('.candy').TopTaker({'theme':'dark','scrollPositionY':'1200'});
 		});
 	</script>
 </body>
