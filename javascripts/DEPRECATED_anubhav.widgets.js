@@ -3,8 +3,8 @@
         options: {
             theme: ''
             , text: 'TOP'
-            , hiddenClass: 'hid'
-            , positionClass: 'fixpos'
+            , hiddenClass: 'hidden'
+            , positionClass: 'fixed'
             , cursorClass: 'pointer'
             , scrollPositionY: '100'
 			, imageElement: '<i class="icon"></i>'

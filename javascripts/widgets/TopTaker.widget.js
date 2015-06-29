@@ -5,7 +5,7 @@
             theme: '',
             text: 'TOP',
             hiddenClass: 'hide-top-taker',
-            positionClass: 'fixpos',
+            positionClass: 'fixed',
             cursorClass: 'pointer',
             scrollPositionY: '100',
 			      imageElement: '<i class="icon"></i>',
