@@ -4,40 +4,46 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-<style type="text/css">
-body{width:5000px; height:95%; background-color: rgb(79, 129, 188) ;}
-.wideBox{margin:.5%; background-color: #eee; min-height:200px;  box-shadow: 0 0 0 15px rgba(255,255,255,0.1); padding: 15px;}
-header h1{
-	color: rgba(255,255,255,0.95);
-	font-size: 48px;
-	font-family: sans-serif;
-	margin-left: 0.5%;
-}
-.highBox{
-	height: 600px;
-	width: 30px;
-	 box-shadow: 0 0 0 15px rgba(255,255,255,0.1); padding: 15px;
-	 margin:1%; background-color: #eee;
-}
-</style>
-<script type="text/javascript" src="../../javascripts/jq.js"></script>
-<script type="text/javascript" src="../../javascripts/jqui.js"></script>
-
-<script type="text/javascript" src="../../javascripts/SideScroll.widget.js"></script>
-<script type="text/javascript">
-$(function(){
-	$('.wideBox').SideScroll();
-
-});
-</script>
-
+	<style type="text/css">
+		body {
+			width:5000px;
+			height:95%;
+			background-color: rgb(79, 129, 188);
+		}
+		.wideBox {
+			margin:.5%;
+			background-color: #eee;
+			min-height:200px;
+			box-shadow: 0 0 0 15px rgba(255,255,255,0.1);
+			padding: 15px;
+		}
+		header h1{
+			color: rgba(255,255,255,0.95);
+			font-size: 48px;
+			font-family: sans-serif;
+			margin-left: 0.5%;
+		}
+		.highBox{
+			height: 600px;
+			width: 30px;
+			box-shadow: 0 0 0 15px rgba(255,255,255,0.1); padding: 15px;
+			margin:1%; background-color: #eee;
+		}
+	</style>
 </head>
 <body>
-<header><h1>I Am Anubhav Saini</h1></header>
-<div class="wideBox">Me is fat. scroll me on me.</div>
-<div class="highBox">I am so high.</div>
-<div>
-	<script src="../node_modules/jquery/dist/jquery.js" type="text/javascript"></script>
-</div>
+	<header><h1>I Am Anubhav Saini</h1></header>
+	<div class="wideBox">Me is fat. scroll me on me.</div>
+	<div class="highBox">I am so high.</div>
+	<div>
+		<script src="../../node_modules/jquery/dist/jquery.js" type="text/javascript"></script>
+		<script type="text/javascript" src="../../javascripts/jqui.js"></script>
+		<script type="text/javascript" src="../../javascripts/SideScroll.widget.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('.wideBox').SideScroll();
+			});
+		</script>
+	</div>
 </body>
 </html>

@@ -6,17 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>WonderSelect example</title>
     <link href="../../styles/bs.css" type="text/css" rel="stylesheet" />
-    <script type="text/javascript" src="../../javascripts/jq.js"></script>
-    <script type="text/javascript" src="../../javascripts/jqui.js"></script>
-    <script type="text/javascript" src="../../javascripts/WonderSelect.widget.js"></script>
     <style type="text/css">
         .WonderSelect.normal { min-width: 50px; width: 150px; border: thin solid #eee; box-shadow: 1px 1px 2px inset #ddd; text-align: center; padding: 2px 5px; overflow: hidden; }
         .WonderSelect-items { }
     </style>
 </head>
 <body>
-    <header>
-    </header>
     <section>
         <div class="WS1">
             <select style="display: none;">
@@ -25,17 +20,17 @@
                 <option value="3">3</option>
             </select>
         </div>
-
     </section>
-    <footer></footer>
-    <script type="text/javascript">
-        $(function () {
-            $('.WS1').WonderSelect();
 
-        });
-    </script>
     <div>
   		<script src="../node_modules/jquery/dist/jquery.js" type="text/javascript"></script>
+      <script type="text/javascript" src="../../javascripts/jqui.js"></script>
+      <script type="text/javascript" src="../../javascripts/WonderSelect.widget.js"></script>
+      <script type="text/javascript">
+          $(function () {
+              $('.WS1').WonderSelect();
+          });
+      </script>
   	</div>
 </body>
 </html>

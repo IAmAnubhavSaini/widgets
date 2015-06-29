@@ -7,42 +7,36 @@
 	<link href="../../styles/reset.css" type="text/css" rel="stylesheet" />
 	<link href="../../styles/bs.css" type="text/css" rel="stylesheet" />
 	<link href="../../styles/anubhav.widgets.css" type="text/css" rel="stylesheet" />
-	<!--
-
-	because now a days it really doesn't matter where you put your scripts -->
-	<script type="text/javascript" src="../../javascripts/jq.js"></script>
-	<script type="text/javascript" src="../../javascripts/jqui.js"></script>
-	<script type="text/javascript" src="../../javascripts/bs.js"></script>
-	<script type="text/javascript" src="../../javascripts/anubhav.widgets.js"></script>
 	<style type="text/css">
 		body{ height: 2000px; width: 1300px;}
 		.top-taker{
 			padding: 5px 10px 5px 5px;
 		}
-
 	</style>
 </head>
 <body>
-<header>
-
-</header>
-<section>
-	<div class="TopTaker"></div>
-	<div class="CarouselLite"></div>
-	<div class="BreadCrumbs"></div>
-	<div class="PhotoLabeler"></div>
-</section>
-<footer></footer>
-<script type="text/javascript">
-$(function(){
-	$('.TopTaker').TopTaker({'theme':'dark','text':'take me to the top'});
-	$('.CarouselLite').TWBS_Carousel_lite();
-	$('.BreadCrumbs').breadcrumbs();
-	$('.PhotoLabeler').photolabeler();
-});
-</script>
-<div>
-	<script src="../node_modules/jquery/dist/jquery.js" type="text/javascript"></script>
-</div>
+	<section>
+		<div class="TopTaker"></div>
+		<div class="CarouselLite"></div>
+		<div class="BreadCrumbs"></div>
+		<div class="PhotoLabeler"></div>
+	</section>
+	<div>
+		<!-- was at the top in the head ???
+	TODO: check this theory. I believe that I wrote it so must be true. But I have doubts too.
+		because now a days it really doesn't matter where you put your scripts -->
+		<script src="../../node_modules/jquery/dist/jquery.js" type="text/javascript"></script>
+		<script type="text/javascript" src="../../javascripts/jqui.js"></script>
+		<script type="text/javascript" src="../../javascripts/bs.js"></script>
+		<script type="text/javascript" src="../../javascripts/anubhav.widgets.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('.TopTaker').TopTaker({'theme':'dark','text':'take me to the top'});
+				$('.CarouselLite').TWBS_Carousel_lite();
+				$('.BreadCrumbs').breadcrumbs();
+				$('.PhotoLabeler').photolabeler();
+			});
+		</script>
+	</div>
 </body>
 </html>
