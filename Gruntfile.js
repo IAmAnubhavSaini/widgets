@@ -14,11 +14,11 @@ module.exports = function(grunt) {
           jquery: true
         }
       },
-      files: ['javascripts/*.js', '!src/jq.js', '!src/bs.js', '!src/jqui.js']
+      files: ['javascripts/widgets/TopTaker.widget.js', '!src/jq.js', '!src/bs.js', '!src/jqui.js']
     }
   });
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-bootlint');
 
-  grunt.registerTask('release-the-hounds', ['bootlint', 'jshint'])
+  grunt.registerTask('release-the-hounds', ['bootlint', 'jshint']);
 };

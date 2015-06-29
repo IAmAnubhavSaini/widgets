@@ -2,16 +2,16 @@
     "use strict";
     $.widget("anubhav.TopTaker", {
         options: {
-            theme: ''
-            , text: 'TOP'
-            , hiddenClass: 'hide-top-taker'
-            , positionClass: 'fixpos'
-            , cursorClass: 'pointer'
-            , scrollPositionY: '100'
-			, imageElement: '<i class="icon"></i>'
-            , iconClass: 'icon-arrow-up'
-        }
-        , _create: function () {
+            theme: '',
+            text: 'TOP',
+            hiddenClass: 'hide-top-taker',
+            positionClass: 'fixpos',
+            cursorClass: 'pointer',
+            scrollPositionY: '100',
+			      imageElement: '<i class="icon"></i>',
+            iconClass: 'icon-arrow-up',
+        },
+        _create: function () {
             var self = this,
                 container = self.element,
                 options = self.options,
@@ -28,7 +28,7 @@
                             .append(options.text)
                             .bind('click', function () {
                                 window.scrollTo(0, 0);
-                            });            
+                            });
 
             $(window).bind('scroll', function () {
                 if (window.scrollY > scrollPositionY) {
@@ -38,10 +38,9 @@
                     $(theTopTaker).addClass(hiddenClass);
                 }
             });
-            
             $(container).append(theTopTaker);
-        }
-        , destroy: function () {
+        },
+        destroy: function () {
             $(theTopTaker).unbind('click');
             $(window).unbind('scroll');
             $(container).html('');
