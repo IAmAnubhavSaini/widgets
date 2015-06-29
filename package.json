@@ -1,0 +1,29 @@
+{
+  "name": "widgets",
+  "version": "0.0.2",
+  "description": "Widgets that are useful for web applications. Easy and quick installation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IAmAnubhavSaini/widgets.git"
+  },
+  "keywords": [
+    "jquery-ui",
+    "jquery-widgets",
+    "jquery",
+    "widgets",
+    "javascript"
+  ],
+  "author": "Anubhav Saini",
+  "license": "The MIT License (MIT)",
+  "bugs": {
+    "url": "https://github.com/IAmAnubhavSaini/widgets/issues"
+  },
+  "homepage": "https://github.com/IAmAnubhavSaini/widgets",
+  "dependencies": {
+    "jquery": "^2.1.4"
+  }
+}
