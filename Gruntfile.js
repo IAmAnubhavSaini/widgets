@@ -6,7 +6,7 @@ module.exports = function(grunt) {
         stoponerror: false,
         relaxerror: []
       },
-      files: 'hypertexts/*.html'
+      files: ['hypertexts/*.html', 'hypertexts/Examples/*.html']
     },
     jshint:{
       options:{
