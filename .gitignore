@@ -11,3 +11,8 @@ Makefile.in
 /depcomp
 /install-sh
 /missing
+
+# no need for packages and build files.
+
+node_modules/
+build/
