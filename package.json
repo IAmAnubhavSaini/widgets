@@ -1,11 +1,8 @@
 {
   "name": "widgets",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Widgets that are useful for web applications. Easy and quick installation.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/IAmAnubhavSaini/widgets.git"

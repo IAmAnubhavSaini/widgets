@@ -1,5 +1,4 @@
-widgets 0.0
-===========
+# widgets
 
 jQuery widgets that are free. 
 
