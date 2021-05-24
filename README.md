@@ -1,4 +1,4 @@
-# widgets
+# widgets - DEPRECATED
 
 jQuery widgets that are free. 
 
