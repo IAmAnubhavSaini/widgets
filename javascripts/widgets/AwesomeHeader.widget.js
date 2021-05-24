@@ -1,8 +1,8 @@
-﻿(function($, undefined) { //awesome header that works when the page is scrolled.
+﻿(function ($, undefined) { //awesome header that works when the page is scrolled.
     "use strict";
     $.widget("anubhav.AwesomeHeader", {
         options: {
-            unscrolledClass:'unscrolled-header'
+            unscrolledClass: 'unscrolled-header'
             , scrolledClass: 'scrolled-header'
             , scrollPositionY: '100'
             , nextElement: 'div'

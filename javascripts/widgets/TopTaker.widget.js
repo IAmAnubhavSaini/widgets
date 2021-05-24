@@ -1,4 +1,4 @@
-(function($, undefined) { //top taker
+(function ($, undefined) { //top taker
     "use strict";
     $.widget("anubhav.TopTaker", {
         options: {
@@ -8,7 +8,7 @@
             positionClass: 'fixed',
             cursorClass: 'pointer',
             scrollPositionY: '100',
-			      imageElement: '<i class="icon"></i>',
+            imageElement: '<i class="icon"></i>',
             iconClass: 'icon-arrow-up',
         },
         _create: function () {
@@ -16,19 +16,19 @@
                 container = self.element,
                 options = self.options,
                 theme = options.theme !== '' ? 'top-taker-' + options.theme : '',
-                imageElement = $(options.imageElement).addClass(options.iconClass).css('margin','0 2px 0 0'),
+                imageElement = $(options.imageElement).addClass(options.iconClass).css('margin', '0 2px 0 0'),
                 hiddenClass = options.hiddenClass,
                 scrollPositionY = options.scrollPositionY,
                 theTopTaker = $('<div class="top-taker"></div>')
-                            .addClass(theme)
-                            .addClass(hiddenClass)
-                            .addClass(options.positionClass)
-                            .addClass(options.cursorClass)
-                            .append(imageElement)
-                            .append(options.text)
-                            .bind('click', function () {
-                                window.scrollTo(0, 0);
-                            });
+                    .addClass(theme)
+                    .addClass(hiddenClass)
+                    .addClass(options.positionClass)
+                    .addClass(options.cursorClass)
+                    .append(imageElement)
+                    .append(options.text)
+                    .bind('click', function () {
+                        window.scrollTo(0, 0);
+                    });
 
             $(window).bind('scroll', function () {
                 if (window.scrollY > scrollPositionY) {

@@ -41,7 +41,7 @@
                 console.log(_nextElement);
                 var _nextVal = _nextElement.attr('data-val');
                 //console.log(_nextVal);
-                $(this).css({ 'top': -1 * heightOfOneItem });
+                $(this).css({'top': -1 * heightOfOneItem});
                 $(this).children('[data-active=active]').attr('data-active', 'inactive');
                 $(_nextElement).attr('data-active', 'active');
             });
