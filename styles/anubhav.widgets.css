@@ -1,12 +1,15 @@
 .fixed {
- position: fixed;
+    position: fixed;
 }
+
 .pointer {
- cursor: pointer;
+    cursor: pointer;
 }
+
 .hidden {
- display: none;
+    display: none;
 }
+
 .centertext {
- text-align: center;
+    text-align: center;
 }
